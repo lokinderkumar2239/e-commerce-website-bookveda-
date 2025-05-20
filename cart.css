@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background-color: #e2e7e6;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+    background-color: #0077b6;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.nav-logo img {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    width: 100px;
+    object-fit: cover;
+}
+.nav-logo h2{
+    color: white;
+}
+
+.nav-logo i{
+    height: 50px;
+    width: 100px;
+    align-items: center;
+    
+}
+/*
+.border {
+    border: 1.9px solid transparent;
+}
+
+.border:hover {
+    border: 1.9px solid white;
+} 
+    
+
+/** box2 **/
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+
+.add-first {
+    color: #f4eeee;
+    font-size: 1rem;
+    margin-left: 15px;
+}
+
+.add-second {
+    margin-left: 5px;
+}
+
+/** box3 **/
+
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f3f3f3;
+    width: 640px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.search-select {
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+
+}
+
+.select-input {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    margin-left: 4px;
+}
+
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    font-size: 1.2rem;
+    background-color: #f3a846;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.nav-signin a{
+    text-decoration: none;
+    color: white;
+}
+
+/** box4 **/
+span {
+    font-size: 0.85rem;
+}
+
+.nav-second {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/** box6 **/
+.nav-cart i {
+    font-size: 30px;
+}
+
+.nav-cart {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.cart-container {
+    max-width: 850px;
+    height: 650px;
+    margin: auto;
+    margin-top: 30px;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 6px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+h2, h3 {
+    color: #000000;
+    font-weight: 600;
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 30px 0;
+}
+.cart-item img {
+    width: 120px;
+    height: 120px;
+    object-fit:  contain;
+    margin-right: 20px;
+    border-radius: 1px;
+}
+.item-details {
+    flex-grow: 1;
+
+}
+.price {
+    color: #000000;
+    font-weight: bold;
+}
+.original-price {
+    text-decoration: line-through;
+    color: grey;
+}
+.discounted-price {
+    color: #000000;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.cart-actions{
+    margin-top: 9px;
+}
+.cart-actions button {
+    background: none;
+    border: 1px solid #000000;
+    color: #000000;
+    width: 10rem;
+    padding: 7px 12px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+.cart-actions button:hover {
+    background: #60c2ef;
+    color: white;
+}
+.price-details {
+    height: 16rem;
+    margin-top: 40px;
+    padding: 15px;
+    background: #d7dfe1;
+    border-radius: 3px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+.price-details p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+
+}
+.discount {
+    color: green;
+}
+.free {
+    color: green;
+}
+.total {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+hr{
+    margin-top: 15px;
+}
+
+.place-order {
+    width: 100%;
+    background: #fca311;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+.place-order:hover {
+    background: #e69500;
+    
+}
+
+/** footer **/
+
+footer{
+    margin-top: 15px;
+}
+.foot-panel4{
+    background-color: #ffffff;
+    color: #000000;
+    height: 80px;
+    font-size: 0.95rem;
+    text-align: center;
+
+}
+.pages{
+    padding-top: 25px;
+}
+.copyright{
+    padding-top: 5px;
+}

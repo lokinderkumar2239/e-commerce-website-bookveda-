@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <img src="websitelogo1.png">
+            </div>
+            <div class="nav-address border">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-second">India</p>
+                </div>
+            </div>
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input placeholder="Search for Books" class="select-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="nav-signin border">
+                <a href="login.html" target="_blank"><span>Hello, sign in</span></a>
+                <p class="nav-second">Account & Lists</p>
+            </div>
+            <div class="nav-signin border">
+                <p><span>Returns</span></p>
+                <p class="nav-second">& Orders</p>
+            </div>
+        </div>
+
+        <!--cart-section-->
+
+        <div class="cart-container">
+            <div class="cart-item">
+                <img src="hin11.webp" alt="Book Image">
+                <div class="item-details">
+                    <h3>Ikigai - The Japanese Secret</h3>
+                    <p>Seller: Bookstore Assured</p>
+                    <p class="price">Rs. <span class="original-price">199.00</span> <span
+                            class="discounted-price">99.00</span></p>
+
+                    <div class="cart-actions">
+                        <button class="save">Save for Later</button>
+                        <button class="remove">Remove</button>
+                    </div>
+                </div>
+            </div>
+            <div class="price-details">
+                <h3>Price Details</h3>
+                <p>Price (1 item): <span>Rs. 199.00</span></p>
+                <p>Discount: <span class="discount">- Rs. 100.00</span></p>
+                <p>Delivery Charges: <span class="free">Free</span></p>
+                <hr>
+                <p class="total">Total Amount: <span>Rs. 99.00</span></p>
+                <button class="place-order">PLACE ORDER</button>
+            </div>
+        </div>
+
+        <!--footer-->
+
+        <footer>
+            <div class="foot-panel4">
+                <div class="pages">
+                    <a>Conditions of Use & Sale</a>
+                    <a>Privacy Notice</a>
+                    <a>Interest-Based Ads</a>
+                </div>
+                <div class="copyright">
+                    © 1996-2025, E-book.com, Inc. or its affiliates
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>

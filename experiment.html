@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>experiment</title>
+    <script src="logic.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        loadNavbar();
+    </script>
+
+    <button onclick="addToCart()">Add to Cart</button>
+    <div id="cart-icon">
+        <i class="fa fa-shopping-cart"></i>
+        <span id="cart-count">0</span>
+      </div>
+
+      <script>
+        // Cart ko store karne ke liye array
+        let cartItems = [];
+      
+        // Function: Add to cart
+        function addToCart() {
+          const product = {
+            name: "Ikigai - The Japanese Secret",
+            price: 999,
+            quantity: 1
+          };
+      
+          // Check agar item already cart mein hai
+          const existing = cartItems.find(item => item.name === product.name);
+      
+          if (existing) {
+            existing.quantity += 1;
+          } else {
+            cartItems.push(product);
+          }
+      
+          updateCartCount();
+          alert(`${product.name} added to cart! Total items: ${getTotalItems()}`);
+        }
+      
+        // Total items count kare
+        function getTotalItems() {
+          return cartItems.reduce((total, item) => total + item.quantity, 0);
+        }
+      
+        // Cart icon ka number update kare
+        function updateCartCount() {
+          document.getElementById("cart-count").innerText = getTotalItems();
+        }
+      </script>
+      
+
+
+
+</body>
+
+</html>
