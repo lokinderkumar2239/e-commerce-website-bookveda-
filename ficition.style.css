@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ /** shop-section **/
+ .shop-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #e2e7e6;
+    padding: 0 18px;
+ }
+
+.box{
+    align-items: center;
+    justify-content: center;
+    height: 334px;
+    width: 14%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 1px;
+    margin: 2px 3px;
+    
+ }
+ .box-content{
+    padding: 2px 20px;   
+ }
+ .box-img {
+    height:230px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    transition: transform 0.2s ease-in-out;
+
+}
+.box-img:hover{
+    transform: scale(1.1);
+}
+.text{
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.box-content p{
+    font-size: 0.8rem;   
+}
+#style{
+    text-decoration: line-through;
+}
+.box-content button{
+    height: 30px;
+    padding: 0 40px;
+    background: white;
+    margin-top: 2px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/** footer **/
+
+footer{
+    margin-top: 15px;
+}
+.foot-panel1{
+    background-color: #374352;
+    color: white;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+}
+
+.foot-panel2{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #222f3d;
+    color: white;
+    height: 320px;
+}
+ul a{
+    display: block;
+    font-size: 0.95rem;
+    color: #dddddd;
+    margin-top: 10px;
+}
+ul p{
+    margin-top: 40px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.foot-panel3{
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #222f3d;
+    color: white;
+    border-top: 1.5px solid white;
+}
+.foot-panel4{
+    background-color: #191d1d;
+    color: white;
+    height: 80px;
+    font-size: 0.95rem;
+    text-align: center;
+
+}
+.pages{
+    padding-top: 25px;
+}
+.copyright{
+    padding-top: 5px;
+}
