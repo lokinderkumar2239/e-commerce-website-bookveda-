@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background-color: #e2e7e6;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+    background-color: #0077b6;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.nav-logo img {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.nav-logo i{
+    height: 50px;
+    width: 100px;
+    align-items: center;
+    
+}
+/*
+.border {
+    border: 1.9px solid transparent;
+}
+
+.border:hover {
+    border: 1.9px solid white;
+} 
+    
+
+/** box2 **/
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+
+.add-first {
+    color: #f4eeee;
+    font-size: 1rem;
+    margin-left: 15px;
+}
+
+.add-second {
+    margin-left: 5px;
+}
+
+/** box3 **/
+
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f3f3f3;
+    width: 640px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.search-select {
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+
+}
+
+.select-input {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    margin-left: 4px;
+}
+
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    font-size: 1.2rem;
+    background-color: #f3a846;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/** box4 **/
+span {
+    font-size: 0.85rem;
+}
+
+.nav-second {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/** box6 **/
+.nav-cart i {
+    font-size: 30px;
+}
+
+.nav-cart {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/** panel **/
+.panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40px;
+    background-color: #f8f9fa;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.panel-ops {
+    width: 70%;
+    font-size: 0.9rem;
+}
+
+.panel-ops p {
+    display: inline;
+    margin-left: 15px;
+}
+
+
+ /** shop-section **/
+ .shop-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #e2e7e6;
+    padding: 0 18px;
+ }
+
+.box{
+    align-items: center;
+    justify-content: center;
+    height: 334px;
+    width: 14%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 1px;
+    margin: 1px 3px;
+    
+ }
+ .box-content{
+    padding: 2px 20px;   
+ }
+ .box-img {
+    height:230px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    transition: transform 0.2s ease-in-out;
+
+}
+.box-img:hover{
+    transform: scale(1.1);
+}
+.text{
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.box-content p{
+    font-size: 0.8rem;   
+}
+#style{
+    text-decoration: line-through;
+}
+.box-content button{
+    height: 30px;
+    padding: 0 40px;
+    background: white;
+    margin-top: 2px;
+    border-radius: 3px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/** footer **/
+
+footer{
+    margin-top: 15px;
+}
+.foot-panel1{
+    background-color: #374352;
+    color: white;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+}
+
+.foot-panel2{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #222f3d;
+    color: white;
+    height: 320px;
+}
+ul a{
+    display: block;
+    font-size: 0.95rem;
+    color: #dddddd;
+    margin-top: 10px;
+}
+ul p{
+    margin-top: 40px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.foot-panel3{
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #222f3d;
+    color: white;
+    border-top: 1.5px solid white;
+}
+.foot-panel4{
+    background-color: #191d1d;
+    color: white;
+    height: 80px;
+    font-size: 0.95rem;
+    text-align: center;
+
+}
+.pages{
+    padding-top: 25px;
+}
+.copyright{
+    padding-top: 5px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-Section</title>
+    <link rel="stylesheet" href="particular.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <script src="logic.js"></script>
+
+</head>
+
+<body>
+    <script>
+        loadNavbar();
+    </script>
+
+    <!--main-section-->
+
+    <div class="container">
+        <div class="book-details">
+            <img src="fea1.webp" alt="Book Cover" class="book-image">
+            <div class="book-info">
+                <div class="info">
+                    <h1>Ikigai - The Japanese Secret</h1>
+                    <p>Price: <del>Rs. 2,999.00</del> <strong>Rs. 999.00</strong></p>
+                    <p>Sale ends in: <span id="countdown">12:16</span></p>
+                </div>
+                <div class="book-offers">
+                    <h6>Coupons for you</h6>
+                    <p>Special PriceGet extra ₹20 off on 20 item(s) (price inclusive of cashback/coupon)T&C</p>
+                    <h6>Available offers</h6>
+                    <p>Bank Offer5%  Unlimited Cashback on Flipkart Axis Bank Credit CardT&C
+                    </p>
+                    <p>
+                        Bank  Offer10% off on BOBCARD EMI Transactions, up to ₹1,500 on orders of ₹5,000 and aboveT&C</p>
+                </div>
+                <div class="btn-group">
+                    <button class="btn" onclick="addToCart()">Add to Cart</button>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="review-section">
+            <h2>Customer Reviews</h2>
+            <input type="text" id="reviewerName" placeholder="Your Name">
+            <textarea id="reviewText" placeholder="Write your review..."></textarea>
+            <div>
+                <label for="rating">Rating:</label>
+                <select id="rating">
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="1">★☆☆☆☆</option>
+                </select>
+            </div>
+            <button onclick="addReview()">Submit</button>
+            <div id="reviews"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+
